@@ -16,6 +16,26 @@ npm i @monaco-editor/react
 
 ## Demo
 
+## Architecture
+
+In order to load the scripts a single time and allow for any number of editors to gain access to the monaco environment, I've created a MonacoProvider component, which should be near the top-level of your App and wrap any other Editor components, so they can obtain the Monaco environment via React Context.
+
+## Components/Props
+
+### MonacoProvider
+
+
+### Editor
+
+
+### Controlled
+
+
+### Uncontrolled
+
+
+### DiffEditor
+
 
 ## Example
 

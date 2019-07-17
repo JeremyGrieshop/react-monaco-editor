@@ -4,6 +4,7 @@
   "main": "dist/index.js",
   "module": "dist/index.js",
   "author": "Jeremy Grieshop <jeremygrieshop@gmail.com>",
+  "license": "MIT",
   "files": [
     "dist"
   ],
