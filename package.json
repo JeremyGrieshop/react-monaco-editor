@@ -1,8 +1,9 @@
 {
-  "name": "react-monaco-editor",
+  "name": "jeremygrieshop/react-monaco-editor",
   "version": "0.1.0",
   "main": "dist/index.js",
   "module": "dist/index.js",
+  "author": "Jeremy Grieshop <jeremygrieshop@gmail.com>",
   "files": [
     "dist"
   ],

@@ -1,6 +1,6 @@
 # react-monaco-editor
 
-This project was first inspired by the work here:  https://raw.githubusercontent.com/SurenAt93/monaco-react
+Use the Monaco editor within React!  This project was first inspired by the work here:  https://raw.githubusercontent.com/SurenAt93/monaco-react
 
 ## Purpose
 
@@ -8,9 +8,6 @@ The Monaco Editor is a rich code editor, ported from Microsoft's VS Code base, w
 
 ## Installation
 
-```bash
-npm i @grieshop/react-monaco-editor
-```
 
 ## Demo
 
