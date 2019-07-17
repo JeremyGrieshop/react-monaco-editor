@@ -18,3 +18,26 @@ npm i @monaco-editor/react
 
 
 ## Example
+
+```js
+
+import React from 'react';
+
+import {MonacoProvider, Editor} from '@memsetzero/react-monaco-editor';
+
+function App() {
+  return (
+    <MonacoProvider theme="vs-dark">
+      <Editor 
+        style={{width: "100%", height: "600px"}}
+        value="Hello, Monaco World!"
+        options={{
+          lineNumbers: false
+        }}
+      />
+    </MonacoProvider>
+  );
+}
+
+
+```
