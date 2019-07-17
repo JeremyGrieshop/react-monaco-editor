@@ -45,7 +45,7 @@ In order to load the scripts a single time and allow for any number of editors t
 |:----------|:-------------|:------|:------|
 |value|string||The text value to set in the Monaco editor.|
 |options|object||A list of Monaco options, defined at https://microsoft.github.io/monaco-editor/api/interfaces/monaco.editor.ieditorconstructionoptions.html.|
-|editorDidMount|func|undefined|Optional callback after the editor has mounted.|
+|editorDidMount|() => (editor)||Optional callback after the editor has mounted.|
 
 #### Controlled
 
@@ -54,7 +54,7 @@ In order to load the scripts a single time and allow for any number of editors t
 |value|string||The text value to set in the Monaco editor.|
 |options|object||A list of Monaco options, defined at https://microsoft.github.io/monaco-editor/api/interfaces/monaco.editor.ieditorconstructionoptions.html.|
 |onChanged||||
-|editorDidMount|func|undefined|Optional callback after the editor has mounted.|
+|editorDidMount|() => (editor)||Optional callback after the editor has mounted.|
 
 #### Uncontrolled
 
@@ -62,15 +62,15 @@ In order to load the scripts a single time and allow for any number of editors t
 |:----------|:-------------|:------|:------|
 |value|string||The text value to set in the Monaco editor.  Once set, further updates are ignored.|
 |options|object||A list of Monaco options, defined at https://microsoft.github.io/monaco-editor/api/interfaces/monaco.editor.ieditorconstructionoptions.html.|
-|editorDidMount|func|undefined|Optional callback after the editor has mounted.|
+|editorDidMount|() => (editor)||Optional callback after the editor has mounted.|
 
 #### DiffEditor
 
 | Name | Type | Default | Description |
 |:----------|:-------------|:------|:------|
-|original|object|undefined|An object with a value and language properties describing original content.|
-|modified|object|undefined|An object with a value and language properties describing modified content.|
-|editorDidMount|func|undefined|Optional callback after the editor has mounted.|
+|original|object||An object with a value and language properties describing original content.|
+|modified|object||An object with a value and language properties describing modified content.|
+|editorDidMount|() => (editor)||Optional callback after the editor has mounted.|
 
 ## Examples
 
