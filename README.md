@@ -20,6 +20,10 @@ npm i @memsetzero/react-monaco-editor
 
 In order to load the scripts a single time and allow for any number of editors to gain access to the monaco environment, I've created a MonacoProvider component, which should be near the top-level of your App and wrap any other Editor components, so they can obtain the Monaco environment via React Context.
 
+#### Controlled vs Uncontrolled
+
+
+
 ## Components/Props
 
 #### MonacoProvider
@@ -93,3 +97,30 @@ function App() {
 
 
 ```
+
+### Controlled Editor
+
+
+```js
+
+import React, {useState} from 'react';
+
+import {MonacoProvider, Controlled as Editor} from '@memsetzero/react-monaco-editor';
+
+function App() {
+  const [value, setValue] = useState("Hello, Monaco World!");
+
+  return (
+    <MonacoProvider theme="vs-dark">
+      <Editor
+        style={{width: "100%", height: "600px"}}
+        value={value}
+        onChanged={setValue}
+      />
+    </MonacoProvider>
+  );
+}
+
+
+```
+
