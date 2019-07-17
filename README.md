@@ -16,6 +16,8 @@ npm i @memsetzero/react-monaco-editor
 
 ## Demo
 
+[CodeSandbox Demo](https://codesandbox.io/embed/memsetzeroreact-monaco-editor-lelh8)
+
 ## Architecture
 
 In order to load the scripts a single time and allow for any number of editors to gain access to the monaco environment, I've created a MonacoProvider component, which should be near the top-level of your App and wrap any other Editor components, so they can obtain the Monaco environment via React Context.
@@ -31,18 +33,18 @@ In order to load the scripts a single time and allow for any number of editors t
 | Name | Type | Default | Description |
 |:----------|:-------------|:------|:------|
 |theme|enum: 'vs-light' \| 'vs-dark' | 'vs-light' | Theme to be used for the Monaco environment.|
-|modelLanguages||||
-|modelMarkers||||
-|baseUrl||||
-|loaderUrl||||
-|workerMain||||
+|modelLanguages|array|[]|Sets an array of languages, used by models.|
+|modelMarkers|array|[]|Sets an array of markers, used by models.|
+|baseUrl|string||The CDN base url to fetch Monaco editor scripts.|
+|loaderUrl|string||The CDN url for loading the Monaco editor scripts.|
+|workerMain|string|||
 
 #### Editor
 
 | Name | Type | Default | Description |
 |:----------|:-------------|:------|:------|
-|value||||
-|options||||
+|value|string||The text value to set in the Monaco editor.|
+|options|object||A list of Monaco options, defined at https://microsoft.github.io/monaco-editor/api/interfaces/monaco.editor.ieditorconstructionoptions.html.|
 
 #### Controlled
 
