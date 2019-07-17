@@ -30,27 +30,41 @@ In order to load the scripts a single time and allow for any number of editors t
 
 | Name | Type | Default | Description |
 |:----------|:-------------|:------|:------|
-|theme|enum: 'vs-light' \: 'vs-dark' | 'vs-light' | Theme to be used for the Monaco environment.|
+|theme|enum: 'vs-light' \| 'vs-dark' | 'vs-light' | Theme to be used for the Monaco environment.|
+|modelLanguages||||
+|modelMarkers||||
+|baseUrl||||
+|loaderUrl||||
+|workerMain||||
 
 #### Editor
 
 | Name | Type | Default | Description |
 |:----------|:-------------|:------|:------|
+|value||||
+|options||||
 
 #### Controlled
 
 | Name | Type | Default | Description |
 |:----------|:-------------|:------|:------|
+|value||||
+|options||||
+|onChanged||||
 
 #### Uncontrolled
 
 | Name | Type | Default | Description |
 |:----------|:-------------|:------|:------|
+|value||||
+|options||||
 
 #### DiffEditor
 
 | Name | Type | Default | Description |
 |:----------|:-------------|:------|:------|
+|original||||
+|modified||||
 
 ## Examples
 
