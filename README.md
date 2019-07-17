@@ -28,18 +28,29 @@ In order to load the scripts a single time and allow for any number of editors t
 
 #### MonacoProvider
 
+| Name | Type | Default | Description |
+|:----------|:-------------|:------|:------|
+|theme|enum: 'vs-light' \: 'vs-dark' | 'vs-light' | Theme to be used for the Monaco environment.|
 
 #### Editor
 
+| Name | Type | Default | Description |
+|:----------|:-------------|:------|:------|
 
 #### Controlled
 
+| Name | Type | Default | Description |
+|:----------|:-------------|:------|:------|
 
 #### Uncontrolled
 
+| Name | Type | Default | Description |
+|:----------|:-------------|:------|:------|
 
 #### DiffEditor
 
+| Name | Type | Default | Description |
+|:----------|:-------------|:------|:------|
 
 ## Examples
 
@@ -98,7 +109,7 @@ function App() {
 
 ```
 
-### Controlled Editor
+#### Controlled Editor
 
 
 ```js
@@ -111,7 +122,7 @@ function App() {
   const [value, setValue] = useState("Hello, Monaco World!");
 
   return (
-    <MonacoProvider theme="vs-dark">
+    <MonacoProvider theme="vs-light">
       <Editor
         style={{width: "100%", height: "600px"}}
         value={value}
