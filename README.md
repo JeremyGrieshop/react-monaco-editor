@@ -11,7 +11,7 @@ The Monaco Editor is a rich code editor, ported from Microsoft's VS Code base, w
 ```bash
 yarn add @memsetzero/react-monaco-editor
 # or
-npm i @monaco-editor/react
+npm i @memsetzero/react-monaco-editor
 ```
 
 ## Demo
@@ -41,6 +41,7 @@ In order to load the scripts a single time and allow for any number of editors t
 
 
 #### Basic Editor
+
 ```js
 
 import React from 'react';
@@ -55,6 +56,35 @@ function App() {
         value="Hello, Monaco World!"
         options={{
           lineNumbers: false
+        }}
+      />
+    </MonacoProvider>
+  );
+}
+
+
+```
+
+#### Diff Editor
+
+```js
+
+import React from 'react';
+
+import {MonacoProvider, DiffEditor} from '@memsetzero/react-monaco-editor';
+
+function App() {
+  return (
+    <MonacoProvider theme="vs-dark">
+      <DiffEditor
+        style={{width: "100%", height: "600px"}}
+        original={{
+          value: "Hello, Monaco World!",
+          language: "text/plain"
+        }}
+        modified={{
+          value: "Hello, Monaco World, I'm different!",
+          language: "text/plain"
         }}
       />
     </MonacoProvider>
