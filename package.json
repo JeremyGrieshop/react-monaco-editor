@@ -1,6 +1,6 @@
 {
-  "name": "memsetzero/react-monaco-editor",
-  "version": "0.1.0",
+  "name": "@memsetzero/react-monaco-editor",
+  "version": "0.1.2",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "author": "Jeremy Grieshop <jeremygrieshop@gmail.com>",
