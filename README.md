@@ -22,23 +22,25 @@ In order to load the scripts a single time and allow for any number of editors t
 
 ## Components/Props
 
-### MonacoProvider
+#### MonacoProvider
 
 
-### Editor
+#### Editor
 
 
-### Controlled
+#### Controlled
 
 
-### Uncontrolled
+#### Uncontrolled
 
 
-### DiffEditor
+#### DiffEditor
 
 
-## Example
+## Examples
 
+
+#### Basic Editor
 ```js
 
 import React from 'react';
